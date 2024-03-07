@@ -1,62 +1,82 @@
-/* importamos las fuentes */
+/* Importación de fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+
+/* Variables de colores */
+:root {
+  --background-gradient: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  --main-bg-color: #940253;
+  --text-color: #fff;
+  --primary-color: #940253;
+  --shadow-color: #fff;
+}
+
+/* Resetear estilos */
 * {
-  font-family: "Titillium Web";
   margin: 0;
   padding: 0;
 }
+
+/* Configuración global del documento */
 html {
   scroll-behavior: smooth;
 }
 
-/* SECCION INICIO */
+/* Sección de Inicio */
 .inicio {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("img/fondo.jpg");
+  background: var(--background-gradient), url("img/fondo.jpg");
   background-size: cover;
   background-position: center center;
-  color: #fff;
+  color: var(--text-color);
 }
+
 .inicio .contenido-seccion {
   max-width: 1000px;
   margin: auto;
   text-align: center;
   padding: 0 10px;
 }
+
 .inicio .contenido-seccion header {
   padding: 30px;
 }
-/* menu lateral */
+
+/* Menú lateral */
 .inicio .contenido-seccion header nav {
   position: fixed;
   margin-left: 60px;
-  background-color: #940253;
+  background-color: var(--main-bg-color);
   padding: 15px;
   border-radius: 10px;
   text-align: left;
   z-index: 99;
   display: none;
 }
+
 .inicio .contenido-seccion header nav a {
   display: block;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   margin-bottom: 10px;
   font-weight: bold;
 }
+
+/* Estilos del logo */
 .inicio .contenido-seccion header .logo {
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "Yellowtail";
-  text-shadow: 0 0 35px #fff;
+  text-shadow: 0 0 35px var(--shadow-color);
 }
+
 .inicio .contenido-seccion header .logo .color {
-  color: #940253;
+  color: var(--primary-color);
   font-family: "Yellowtail";
 }
+
+/* Barra de navegación */
 .inicio .contenido-seccion header .nav-bar {
   position: fixed;
-  background-color: #940253;
+  background-color: var(--main-bg-color);
   font-size: 20px;
   width: 50px;
   height: 50px;
@@ -65,53 +85,62 @@ html {
   cursor: pointer;
   transition: 3s;
 }
-.inicio .contenido-seccion header .nav-bar:hover{
-  box-shadow: 0 0 35px #fff;
+
+.inicio .contenido-seccion header .nav-bar:hover {
+  box-shadow: 0 0 35px var(--shadow-color);
 }
 
-.inicio .contenido-seccion .info{
+/* Sección de información */
+.inicio .contenido-seccion .info {
   padding-bottom: 130px;
 }
-.inicio .contenido-seccion .info h1{
-  font-size: 3rem;  
+
+.inicio .contenido-seccion .info h1 {
+  font-size: 3rem;
   letter-spacing: 5px;
 }
-.inicio .contenido-seccion .info h2{
+
+.inicio .contenido-seccion .info h2 {
   font-weight: normal;
   font-size: 20px;
   margin-top: -10px;
   letter-spacing: 2px;
 }
-.inicio .contenido-seccion .info .redes{
+
+.inicio .contenido-seccion .info .redes {
   margin: 20px 0;
 }
-.inicio .contenido-seccion .info .redes a{
+
+.inicio .contenido-seccion .info .redes a {
   display: inline-block;
   text-decoration: none;
   background-color: #000;
-  color: #940253;
-  border: 1px solid #940253;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 10%;
   width: 80px;
   line-height: 40px;
   margin: 0 10px;
   transition: 2s;
 }
-.inicio .contenido-seccion .info .redes a:hover{
-  color: #fff;
-  background-color: #940253;
-  box-shadow:0 0 20px #fff;
+
+.inicio .contenido-seccion .info .redes a:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--shadow-color);
 }
 
-.inicio .contenido-seccion .foto{
+/* Sección de la foto */
+.inicio .contenido-seccion .foto {
   position: relative;
 }
-.inicio .contenido-seccion .foto img{
+
+.inicio .contenido-seccion .foto img {
   max-width: 200px;
   border-radius: 50%;
-  border: 5px solid #940253;
+  border: 5px solid var(--primary-color);
   position: absolute;
   left: 50%;
-  top:-100px;
+  top: -100px;
   transform: translateX(-50%);
 }
