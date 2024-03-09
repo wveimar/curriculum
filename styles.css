@@ -32,7 +32,7 @@ html {
 
 /* Sección de Inicio */
 .inicio {
-  background: var(--background-gradient), url("/img/fondo.jpg");
+  background: var(--background-gradient), url("img/fondo.jpg");
   background-size: cover;
   background-position: center center;
   color: var(--text-color);
