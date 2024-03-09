@@ -1,29 +1,6 @@
-/* Importación de fuentes */
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
-
-/* Variables de colores */
-:root {
-  --background-gradient: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  --main-bg-color: #940253;
-  --text-color: #fff;
-  --primary-color: #940253;
-  --shadow-color: #fff;
-}
-
-/* Resetear estilos */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Configuración global del documento */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Sección de Inicio */
 .inicio {
-  background: var(--background-gradient), url("img/fondo.jpg");
+  background: var(--background-gradient), url("/img/fondo.jpg");
   background-size: cover;
   background-position: center center;
   color: var(--text-color);
@@ -65,7 +42,7 @@ html {
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "Yellowtail";
-  text-shadow: 0 0 35px var(--shadow-color);
+  text-shadow: 0 0 35px var(--Shadow-color-light);
 }
 
 .inicio .contenido-seccion header .logo .color {
@@ -87,7 +64,7 @@ html {
 }
 
 .inicio .contenido-seccion header .nav-bar:hover {
-  box-shadow: 0 0 35px var(--shadow-color);
+  box-shadow: 0 0 35px var(--Shadow-color-light);
 }
 
 /* Sección de información */
@@ -127,7 +104,7 @@ html {
 .inicio .contenido-seccion .info .redes a:hover {
   color: var(--text-color);
   background-color: var(--primary-color);
-  box-shadow: 0 0 20px var(--shadow-color);
+  box-shadow: 0 0 20px var(--Shadow-color-light);
 }
 
 /* Sección de la foto */

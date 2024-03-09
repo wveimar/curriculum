@@ -1,8 +1,6 @@
-
-
-class WveimarCV extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+class HeadCV extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
         <section class="inicio" id="inicio">
         <div class="contenido-seccion">
             <header>
@@ -34,7 +32,7 @@ class WveimarCV extends HTMLElement {
         </div>
         </section>
         `;
-    }
+  }
 }
 
-customElements.define('wveimar-cv', WveimarCV);
+customElements.define("head-cv", HeadCV);

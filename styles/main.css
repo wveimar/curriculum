@@ -1,0 +1,32 @@
+/* Importación de fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+@import url(/styles/head-cv.css);
+@import url(/styles/profile-cv.css);
+/* Variables de colores */
+:root {
+  --background-gradient: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  --background-alternate: #e6e6e6;
+  --main-bg-color: #940253;
+  --text-color: #fff;
+  --text-color-alternate: #666;
+  --primary-color: #940253;
+  --Shadow-color-light: #fff;
+}
+
+/* Resetear estilos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuración global del documento */
+html {
+  scroll-behavior: smooth;
+}
+.titulo-seccion {
+  font-family: "Yellowtail";
+  font-size: x-large;
+}
