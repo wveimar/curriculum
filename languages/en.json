@@ -4,14 +4,26 @@
       "description": "I exchange quality education for a house with a pool, barbecue, dog and a large garden, that way I will never have to leave my domains.com again."
     },
     "experience": {
-      "first-job-title": "Backend-end Developer",
-      "first-job-dates": "Jan 1995 - Jan 2000",
-      "first-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "second-job-title": "Front-end Developer",
-      "second-job-dates": "Feb 2000 - Mar 2005",
-      "second-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "last-job-title": "Front-end Developer",
-      "last-job-dates": "Feb 2017 - Current",
-      "last-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-    }
+      "first-job-title": "Freelance Support and Implementation",
+      "first-job-dates": "2005-2011",
+      "first-job-position": "Freelance",
+      "first-job-description": "Implementation of CNT software in different hospitals in Colombia with emphasis on administrative and healthcare aspects.",
+      "second-job-title": "CNT Information Systems",
+      "second-job-dates": "2009-2011",
+      "second-job-position": "Implementation and Support",
+      "second-job-description": "Provided technical support especially in administrative areas.",
+      "third-job-title": "MEDICANCER",
+      "third-job-dates": "2010-2014",
+      "third-job-position": "Administrator",
+      "third-job-description": "Managed the CNT ERP system. Also led an interdisciplinary team and was responsible for staff training.",
+      "fourth-job-title": "Kuub México",
+      "fourth-job-dates": "2021",
+      "fourth-job-position": "Frontend Developer",
+      "fourth-job-description": "Developed web components using React, Next.js, and Material UI.",
+      "last-job-title": "Corporación Una Vida Tranquila",
+      "last-job-dates": "2022-2024",
+      "last-job-position": "Frontend Developer",
+      "last-job-description": "Developed an ERP using Angular and NestJS. Also worked on implementing new features and bug fixing."
+  }
+  
   }

@@ -1,17 +1,31 @@
 {
-    "profile": {
-      "rol": "Desarrollador Front-end",
-      "description": "Intercambio educación de calidad por una casa con piscina, barbacoa, perro y un gran jardín, de esa forma no tendré que salir nunca más de mis dominios.com"
-    },
-    "experience": {
-      "first-job-title": "Desarrollador Backend-end",
-      "first-job-dates": "Enero 1995 - Enero 2000",
-      "first-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "second-job-title": "Desarrollador Front-end",
-      "second-job-dates": "Feb 2000 - Mar 2005",
-      "second-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "last-job-title": "Desarrollador Front-end",
-      "last-job-dates": "Feb 2017 - Actualmente",
-      "last-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-    }
+  "profile": {
+    "rol": "Desarrollador Front-end",
+    "description": "He trabajado en soluciones integrales de base tecnológica para clínicas y hospitales integrando tanto el software de manejo como el equipo de trabajo de cada institución, logrando implementaciones tecnológicas que permanecen en el tiempo. A lo largo de mi carrera, he acumulado una valiosa experiencia en contabilidad y conocimientos de procesos administrativos, gracias a mi participación en diversos proyectos de implementación. Esta experiencia me ha permitido comprender la importancia de la gestión financiera y administrativa para el éxito de cualquier proyecto. Actualmente me desempeño como frontend principalmente con React y angular participando activamente en el ciclo de desarrollo de software."
+  },
+  "short-profile": {
+    "Skills": "HTML,CSS,React , Angular,GraphQL,Contenfull"
+  },
+  "experience": {
+    "first-job-title": "Freelance Soporte e Implementación",
+    "first-job-dates": "2005-2011",
+    "first-job-position": "Freelance",
+    "first-job-description": "Implementación de software CNT en diferentes hospitales de Colombia con énfasis en administrativo y asistencial.",
+    "second-job-title": "CNT Sistemas de Información",
+    "second-job-dates": "2009-2011",
+    "second-job-position": "Implementación y Soporte",
+    "second-job-description": "Brindé soporte técnico especialmente en las áreas administrativas.",
+    "third-job-title": "MEDICANCER",
+    "third-job-dates": "2010-2014",
+    "third-job-position": "Administrador",
+    "third-job-description": "Administré el sistema ERP de CNT. También lideré un equipo interdisciplinario y fui responsable de la capacitación del personal.",
+    "fourth-job-title": "Kuub México",
+    "fourth-job-dates": "2021",
+    "fourth-job-position": "Frontend Developer",
+    "fourth-job-description": "Desarrollé componentes web utilizando React, Next.js y Material UI.",
+    "last-job-title": "Corporación Una Vida Tranquila",
+    "last-job-dates": "2022-2024",
+    "last-job-position": "Frontend Developer",
+    "last-job-description": "Desarrollamos un ERP utilizando Angular y NestJS. También trabajamos en la implementación de nuevas funcionalidades y la corrección de errores."
   }
+}
