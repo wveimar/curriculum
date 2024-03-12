@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,27 @@
 <body>
     <section class="inicio" id="inicio">
         <div class="contenido-seccion">
-            <header>
+            <header>         
+                <div class="translate">
+                <a href="#" id="idioma" class="idioma">
+                    <img src="./img/banderas/latino.svg" alt="Icono bandera" class="img__nav">
+                    <img src="/img/banderas/bottom.svg" alt="Icono bottom" class="img__nav">
+                </a>
+                <ul id="idiomas" class="idiomas">
+                    <li class="opcion">
+                        <a href="#">
+                            <img src="./img/banderas/latino.svg" alt="Icono bandera" class="img__nav">
+                            <span>LATINO</span>
+                        </a>
+                    </li>
+                    <li class="opcion">
+                        <a href="#">
+                            <img src="./img/banderas/usa.svg" alt="Icono bandera" class="img__nav">
+                            <span>USA</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
                     <input type="checkbox" id="menu">
                     <label for="menu" class="nav-bar"><i class="fa-solid fa-bars"></i></label>
                     <nav id="nav" class="nav">
@@ -30,6 +50,7 @@
             </header>
 
             <div class="info">
+                
                 <h1>WVEIMAR MAMIAN</h1>
                 <h2>Desarrollador front-end</h2>
                 <div class="redes">
@@ -47,11 +68,9 @@
     <section class="sobremi" id="sobremi">
         <div class="contenido-seccion">
             <h2 class="titulo-seccion">Sobre Mi</h2>
-            <h3>Detalles Personales</h3>
+            <h3 id="titulo-info"></h3>
             <p class="especial">Me dedico a dar lo mejor de mi para que se vea reflejado en un buen trabajo</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat placeat nobis quod distinctio,
-                obcaecati labore alias suscipit vel eius! Natus voluptatibus, placeat illum ab error voluptas pariatur
-                dolorum modi quisquam?</p>
+            <p id="parrafo-info"></p>
             <div class="fila">
                 <div class="col">
                     <i class="fa-solid fa-user"></i>
@@ -321,7 +340,7 @@
 
         </div>
     </section>
-
+    <script src="main.js"></script>
 </body>
 
 </html>

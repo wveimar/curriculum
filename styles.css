@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
 @import url(styles/profile-cv.css);
 @import url(styles/head-cv.css);
+@import url(styles/idiomas-cv.css);
 /* Variables de colores */
 :root {
   --background-gradient: linear-gradient(
