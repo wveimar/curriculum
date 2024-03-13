@@ -1,29 +1,48 @@
 {
-    "profile": {
-      "rol": "Front-end developer",
-      "description": "I exchange quality education for a house with a pool, barbecue, dog and a large garden, that way I will never have to leave my domains.com again."
-    },
-    "experience": {
-      "first-job-title": "Freelance Support and Implementation",
-      "first-job-dates": "2005-2011",
-      "first-job-position": "Freelance",
-      "first-job-description": "Implementation of CNT software in different hospitals in Colombia with emphasis on administrative and healthcare aspects.",
-      "second-job-title": "CNT Information Systems",
-      "second-job-dates": "2009-2011",
-      "second-job-position": "Implementation and Support",
-      "second-job-description": "Provided technical support especially in administrative areas.",
-      "third-job-title": "MEDICANCER",
-      "third-job-dates": "2010-2014",
-      "third-job-position": "Administrator",
-      "third-job-description": "Managed the CNT ERP system. Also led an interdisciplinary team and was responsible for staff training.",
-      "fourth-job-title": "Kuub México",
-      "fourth-job-dates": "2021",
-      "fourth-job-position": "Frontend Developer",
-      "fourth-job-description": "Developed web components using React, Next.js, and Material UI.",
-      "last-job-title": "Corporación Una Vida Tranquila",
-      "last-job-dates": "2022-2024",
-      "last-job-position": "Frontend Developer",
-      "last-job-description": "Developed an ERP using Angular and NestJS. Also worked on implementing new features and bug fixing."
+  "profile": {
+    "rol": "Front-end Developer",
+    "description": "I have worked on comprehensive technological solutions for clinics and hospitals, integrating both management software and the workforce of each institution, achieving technological implementations that endure over time. Throughout my career, I have accumulated valuable experience in accounting and administrative processes, thanks to my involvement in various implementation projects."
+  },
+  "sections": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "summary": "summary",
+    "contact": "Contact"
+  },
+  "short-profile": {
+    "description": "Currently, I work as a front-end developer, utilizing tools like React, Angular, and NestJS, actively participating in the entire software development cycle. I enjoy the challenges of web development and am constantly seeking opportunities to learn and collaborate as part of a team.",
+    "skills": "HTML, CSS, React, Angular, GraphQL, Contenfull",
+    "location": "Marinilla, Antioquia, Colombia"
+  },
+  "summary": {
+    "first-job-title": "Freelance Support and Implementation",
+    "first-job-dates": "2005-2011",
+    "first-job-position": "Freelance",
+    "first-job-description": "Implementation of CNT software in various hospitals in Colombia with an emphasis on administrative and healthcare aspects.",
+    "second-job-title": "CNT Information Systems",
+    "second-job-dates": "2009-2011",
+    "second-job-position": "Implementation and Support",
+    "second-job-description": "Provided technical support, especially in administrative areas.",
+    "third-job-title": "MEDICANCER",
+    "third-job-dates": "2010-2014",
+    "third-job-position": "Administrator",
+    "third-job-description": "Managed the CNT ERP system. Also led an interdisciplinary team and was responsible for staff training.",
+    "fourth-job-title": "Kuub Mexico",
+    "fourth-job-dates": "2021",
+    "fourth-job-position": "Frontend Developer",
+    "fourth-job-description": "Developed web components using React, Next.js, and Material UI.",
+    "last-job-title": "Corporation A Quiet Life",
+    "last-job-dates": "2022-2024",
+    "last-job-position": "Frontend Developer",
+    "last-job-description": "Developed an ERP using Angular and NestJS. Also worked on implementing new features and bug fixes."
+  },
+  "contact": {
+    "title": "Get in touch right away!",
+    "phone": "Phone",
+    "email":"Email",
+    "website": "Website"
   }
   
-  }
+
+}

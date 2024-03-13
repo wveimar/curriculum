@@ -1,12 +1,21 @@
 {
   "profile": {
     "rol": "Desarrollador Front-end",
-    "description": "He trabajado en soluciones integrales de base tecnológica para clínicas y hospitales integrando tanto el software de manejo como el equipo de trabajo de cada institución, logrando implementaciones tecnológicas que permanecen en el tiempo. A lo largo de mi carrera, he acumulado una valiosa experiencia en contabilidad y conocimientos de procesos administrativos, gracias a mi participación en diversos proyectos de implementación. Esta experiencia me ha permitido comprender la importancia de la gestión financiera y administrativa para el éxito de cualquier proyecto. Actualmente me desempeño como frontend principalmente con React y angular participando activamente en el ciclo de desarrollo de software."
+    "description": "He trabajado en soluciones integrales de base tecnológica para clínicas y hospitales integrando tanto el software de manejo como el equipo de trabajo de cada institución, logrando implementaciones tecnológicas que permanecen en el tiempo. A lo largo de mi carrera, he acumulado una valiosa experiencia en contabilidad y conocimientos de procesos administrativos, gracias a mi participación en diversos proyectos de implementación."
+  },
+  "sections": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "summary": "Resumen",
+    "contact": "Contacto"
   },
   "short-profile": {
-    "Skills": "HTML,CSS,React , Angular,GraphQL,Contenfull"
+    "description": "Actualmente, me desempeño como desarrollador front-end, con herramientas como React, Angular,NestJS participando de forma activa en el ciclo completo de desarrollo de software. Disfruto del desafío que implica el desarrollo web y estoy constantemente buscando oportunidades para aprender y colaborar en equipo.",
+    "skills": "HTML, CSS, React, Angular, GraphQL, Contenfull",
+    "location": "Marinilla-Antioquia-Colombia"
   },
-  "experience": {
+  "summary": {
     "first-job-title": "Freelance Soporte e Implementación",
     "first-job-dates": "2005-2011",
     "first-job-position": "Freelance",
@@ -27,5 +36,11 @@
     "last-job-dates": "2022-2024",
     "last-job-position": "Frontend Developer",
     "last-job-description": "Desarrollamos un ERP utilizando Angular y NestJS. También trabajamos en la implementación de nuevas funcionalidades y la corrección de errores."
+  },
+  "contact": {
+    "title": "Ponte en contacto ahora mismo!",
+    "phone": "Telefono",
+    "email":"Correo",
+    "website": "SitioWeb"
   }
 }

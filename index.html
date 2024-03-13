@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <section class="inicio" id="inicio">
+    <section class="inicio" id="home">
         <div class="contenido-seccion">
             <header>         
                 <div class="translate">
@@ -38,12 +38,13 @@
                     <input type="checkbox" id="menu">
                     <label for="menu" class="nav-bar"><i class="fa-solid fa-bars"></i></label>
                     <nav id="nav" class="nav">
-                        <a href="#inicio">Inicio</a>
-                        <a href="#sobremi">Sobre mí</a>
-                        <a href="#habilidades">Habilidades</a>
-                        <a href="#resumen">Resumen</a>
-                        <a href="#contacto">Contacto</a>
+                        <a href="#home" data-section="sections" data-value="home"></a>
+                        <a href="#about" data-section="sections" data-value="about"></a>
+                        <a href="#skills" data-section="sections" data-value="skills"></a>
+                        <a href="#summary" data-section="sections" data-value="summary"></a>
+                        <a href="#contact" data-section="sections" data-value="contact"></a>
                     </nav>
+                    
                     <div class="logo">
                     W<span class="color">M</span>
                     </div>
@@ -52,7 +53,7 @@
             <div class="info">
                 
                 <h1>WVEIMAR MAMIAN</h1>
-                <h2 data-section="profile" data-value="rol">Desarrollador</h2>
+                <h2 data-section="profile" data-value="rol"></h2>
                 <div class="redes">
                     <a href="https://github.com/wveimar"><i class="fa-brands fa-github"></i>Git-Hub</a>
                     <a href="https://www.linkedin.com/in/wveimar-mamian-975bb0211/"><i class="fa-brands fa-linkedin"></i>linkedin</a>
@@ -65,9 +66,9 @@
     </section>
 
 
-    <section class="sobremi" id="sobremi">
+    <section class="sobremi" id="about">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Sobre Mi</h2>
+            <h2 class="titulo-seccion" data-section="sections" data-value="about"></h2>
             <h3 id="titulo-info"></h3>
             <p class="especial">Me dedico a dar lo mejor de mi para que se vea reflejado en un buen trabajo</p>
             <p data-section="profile" data-value="description"></p>
@@ -75,28 +76,25 @@
                 <div class="col">
                     <i class="fa-solid fa-user"></i>
                     <span class="titulo-detalle">Perfil</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem recusandae culpa tempore
-                        repellat quam saepe vitae, nostrum unde placeat impedit</p>
+                    <p data-section="short-profile" data-value="description" ></p>
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
                     <span class="titulo-detalle">Ubicación</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem recusandae culpa tempore
-                        repellat quam saepe vitae, nostrum unde placeat impedit</p>
+                    <p data-section="short-profile" data-value="location"></p>
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-flag"></i>
                     <span class="titulo-detalle">Intereses</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem recusandae culpa tempore
-                        repellat quam saepe vitae, nostrum unde placeat impedit</p>
+                    <p data-section="short-profile" data-value="skills"></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="habilidades" id="habilidades">
+    <section class="habilidades" id="skills">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Mis habilidades</h2>
+            <h2 class="titulo-seccion" data-section="sections" data-value="skills"></h2>
             <h3>Me especializado en</h3>
 
             <div class="fila">
@@ -173,9 +171,9 @@
         </div>
     </section>
 
-    <section class="resumen" id="resumen">
+    <section class="resumen" id="summary">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Resumen</h2>
+            <h2 class="titulo-seccion" data-section="sections" data-value="summary"></h2>
             <h3>Mi preparación y experiencia</h3>
             <div class="info">
                 <div class="col">
@@ -183,7 +181,7 @@
                     <table>
                         <tr>
                             <td class="datos">
-                                <h3 data-section="experience"
+                                <h3 data-section="summary"
                                 data-value="first-job-dates">d</h3>
                             </td>
                             <td rowspan="2" class="descripcion">
@@ -243,13 +241,13 @@
                         <tr>
                             <td class="datos">
                                 <h3 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="last-job-dates"
                                 ></h3>
                             </td>
                             <td rowspan="2" 
                             class="descripcion"
-                            data-section="experience"
+                            data-section="summary"
                                 data-value="last-job-description" 
                             >
                                 
@@ -258,11 +256,11 @@
                         <tr>
                             <td>
                                 <h4 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="last-job-title"
                                 >
                                      </h4>
-                                <p  data-section="experience"
+                                <p  data-section="summary"
                                 data-value="last-job-position"></p>
 
                             </td>
@@ -272,13 +270,13 @@
                         <tr>
                             <td class="datos">
                                 <h3 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="fourth-job-dates"
                                 ></h3>
                             </td>
                             <td rowspan="2" 
                             class="descripcion"
-                            data-section="experience"
+                            data-section="summary"
                                 data-value="fourth-job-description" 
                             >
                                 
@@ -287,11 +285,11 @@
                         <tr>
                             <td>
                                 <h4 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="fourth-job-title"
                                 >
                                      </h4>
-                                <p  data-section="experience"
+                                <p  data-section="summary"
                                 data-value="fourth-job-position"></p>
 
                             </td>
@@ -301,13 +299,13 @@
                         <tr>
                             <td class="datos">
                                 <h3 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="third-job-dates"
                                 ></h3>
                             </td>
                             <td rowspan="2" 
                             class="descripcion"
-                            data-section="experience"
+                            data-section="summary"
                                 data-value="third-job-description" 
                             >
                                 
@@ -316,11 +314,11 @@
                         <tr>
                             <td>
                                 <h4 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="second-job-title"
                                 >
                                      </h4>
-                                <p  data-section="experience"
+                                <p  data-section="summary"
                                 data-value="third-job-position"></p>
 
                             </td>
@@ -330,13 +328,13 @@
                         <tr>
                             <td class="datos">
                                 <h3 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="second-job-dates"
                                 ></h3>
                             </td>
                             <td rowspan="2" 
                             class="descripcion"
-                            data-section="experience"
+                            data-section="summary"
                                 data-value="second-job-description" 
                             >
                                 
@@ -345,11 +343,11 @@
                         <tr>
                             <td>
                                 <h4 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="second-job-title"
                                 >
                                      </h4>
-                                <p  data-section="experience"
+                                <p  data-section="summary"
                                 data-value="second-job-position"></p>
 
                             </td>
@@ -359,13 +357,13 @@
                         <tr>
                             <td class="datos">
                                 <h3 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="first-job-dates"
                                 ></h3>
                             </td>
                             <td rowspan="2" 
                             class="descripcion"
-                            data-section="experience"
+                            data-section="summary"
                                 data-value="first-job-description" 
                             >
                                 
@@ -374,11 +372,11 @@
                         <tr>
                             <td>
                                 <h4 
-                                data-section="experience"
+                                data-section="summary"
                                 data-value="first-job-title"
                                 >
                                      </h4>
-                                <p  data-section="experience"
+                                <p  data-section="summary"
                                 data-value="first-job-position"></p>
 
                             </td>
@@ -390,26 +388,26 @@
     </section>
 
     <!-- seccion contacto -->
-    <section class="contacto" id="contacto">
+    <section class="contacto" id="contact">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Contacto</h2>
-            <h3>Ponte en contacto ahora mismo!</h3>
+            <h2 class="titulo-seccion" data-section="sections" data-value="contact"></h2>
+            <h3 data-section="contact" data-value="title"></h3>
             <div class="fila">
                 <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-phone"></i>Telefono
+                    <h2 data-section="contact" data-value="phone">
+                        <i class="fa-solid fa-phone"></i>
                     </h2>
                     <span class="info-contacto">+057 3014966662</span>
                 </div>
                 <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-envelope"></i>Correo
+                    <h2 data-section="contact" data-value="email">
+                        <i class="fa-solid fa-envelope"></i>
                     </h2>
                     <span class="info-contacto">wveimar.mamian@gmail.com</span>
                 </div>
                 <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-globe"></i>Pagina Web
+                    <h2 data-section="contact" data-value="website">
+                        <i class="fa-solid fa-globe"></i>
                     </h2>
                     <span class="info-contacto">https://wveimar.github.io/curriculum/</span>
                 </div>
