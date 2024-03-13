@@ -1,8 +1,6 @@
 /* Importación de fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
-@import url(styles/profile-cv.css);
-@import url(styles/head-cv.css);
-@import url(styles/idiomas-cv.css);
+
 /* Variables de colores */
 :root {
   --background-gradient: linear-gradient(
@@ -30,6 +28,277 @@ html {
 .titulo-seccion {
   font-family: "Yellowtail";
   font-size: x-large;
+}
+
+
+/* idiomas*/
+.ul__nav{
+  padding-left: 0;
+  list-style: none;
+}
+.a__nav{
+  text-decoration: none;
+}
+.img__nav{
+  width: 15px;
+  height: 15px;
+}
+.translate{
+  display: flex;
+  justify-content: end;
+  width: 95%;
+  margin: auto;
+}
+.idioma{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  position: relative;
+}
+.idioma:hover{
+  background-color: rgb(228, 228, 228);
+}
+/* Lista de idiomas */
+.idiomas{
+  position: absolute;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+.idiomas li{
+  width: 100%;
+}
+.idiomas li a{
+  display: block;
+  padding: 10px;
+  font-size: 10px;
+  color: rgb(85, 85, 85);
+}
+.idiomas li a:hover{
+  background-color: rgb(219, 219, 219);
+}
+.idiomas li img{
+  border-radius: 50%;
+}
+/* toogle - js */
+.toggle{
+  visibility: visible;
+}
+/* Main */
+.info__main{
+  width: 50%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.info__img img{
+  width: 200px;
+  height: 200px;
+}
+.info__div div{
+  width: 30%;
+  height: 4px;
+  background-color: blue;
+}
+
+/* Sección de Inicio */
+.inicio {
+  background: var(--background-gradient), url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--text-color);
+}
+
+.inicio .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.inicio .contenido-seccion header {
+  padding: 30px;
+}
+
+
+/* Menú lateral */
+.inicio .contenido-seccion header nav {
+  position: fixed;
+  margin-left: 0px;
+  background-color: var(--main-bg-color);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 99;
+  display:none;
+  right: 1px; /* Ajusta la distancia desde el borde derecho según tus necesidades */
+  left: auto;
+}
+
+.inicio .contenido-seccion header input[type="checkbox"] {
+  display: none;
+
+}
+
+.inicio .contenido-seccion header label.nav-bar {
+  /* Alinea a la izquierda */
+  margin-left: 300px; /* Puedes ajustar la distancia según tus necesidades */
+  margin-right: 0px;   /* Asegura que no haya margen a la derecha */
+}
+
+.inicio .contenido-seccion header nav a {
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estilos del logo */
+.inicio .contenido-seccion header .logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Yellowtail";
+  text-shadow: 0 0 35px var(--Shadow-color-light);
+}
+
+.inicio .contenido-seccion header .logo .color {
+  color: var(--primary-color);
+  font-family: "Yellowtail";
+}
+/* Barra de navegación */
+.inicio .contenido-seccion header .nav-bar {
+  position: fixed;
+  background-color: var(--main-bg-color);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  cursor: pointer;
+  transition: 3s;
+}
+
+
+.inicio .contenido-seccion header .nav-bar:hover {
+  box-shadow: 0 0 35px var(--Shadow-color-light);
+}
+
+/* Mostrar/ocultar el menú cuando el checkbox está marcado */
+#menu:checked ~ #nav {  /* Se cambia el selector */
+  display: block;
+}
+
+
+
+
+
+/* Sección de información */
+.inicio .contenido-seccion .info {
+  padding-bottom: 130px;
+}
+
+.inicio .contenido-seccion .info h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.inicio .contenido-seccion .info h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: -10px;
+  letter-spacing: 2px;
+}
+
+.inicio .contenido-seccion .info .redes {
+  margin: 20px 0;
+}
+
+.inicio .contenido-seccion .info .redes a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 10%;
+  width: 80px;
+  line-height: 40px;
+  margin: 0 10px;
+  transition: 2s;
+}
+
+.inicio .contenido-seccion .info .redes a:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--Shadow-color-light);
+}
+
+/* Sección de la foto */
+.inicio .contenido-seccion .foto {
+  position: relative;
+}
+
+.inicio .contenido-seccion .foto img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+}
+
+/* section about */
+.sobremi {
+  background-color: var(--background-alternate);
+  padding: 140px 0 100px 0;
+  text-align: center;
+}
+.sobremi .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+.sobremi .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+.sobremi .contenido-seccion .especial {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-top: 15px;
+}
+.sobremi .contenido-seccion p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+}
+.sobremi .contenido-seccion .fila {
+  display: flex;
+  margin-top: 30px;
+}
+.sobremi .contenido-seccion .fila .col {
+  width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i {
+  color: var(--primary-color);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  line-height: 40px;
+  border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span {
+  display: block;
+  font-weight: bold;
+  margin: 8px;
 }
 
 

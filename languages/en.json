@@ -1,7 +1,11 @@
 {
-  "profile": {
+  "about": {
     "rol": "Front-end Developer",
-    "description": "I have worked on comprehensive technological solutions for clinics and hospitals, integrating both management software and the workforce of each institution, achieving technological implementations that endure over time. Throughout my career, I have accumulated valuable experience in accounting and administrative processes, thanks to my involvement in various implementation projects."
+    "short-description": "I strive to give my best so that it is reflected in good work.",
+    "description": "I have worked on comprehensive technological solutions for clinics and hospitals, integrating both management software and the workforce of each institution, achieving technological implementations that endure over time. Throughout my career, I have accumulated valuable experience in accounting and administrative processes, thanks to my involvement in various implementation projects.",
+    "profile": "Profile",
+    "location": "Location",
+    "skills": "Skills"
   },
   "sections": {
     "home": "Home",
