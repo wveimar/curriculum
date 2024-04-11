@@ -4,6 +4,7 @@ const idiomas = document.getElementsByClassName('opcion');
 
 
 
+
 // Toggle lista idiomas
 idiomaActual.addEventListener('click',()=>{
     listaIdiomas.classList.toggle('toggle');
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             break;
         
         default:
+            establecerIdioma('latino')
             break;
     }
 });

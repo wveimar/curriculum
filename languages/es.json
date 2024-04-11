@@ -1,8 +1,8 @@
 {
   "about": {
-    "rol": "Front-end Developer",
-    "short-description": "I strive to give my best so that it is reflected in good work.",
-    "description": "I have worked on comprehensive technological solutions for clinics and hospitals, integrating both management software and the workforce of each institution, achieving technological implementations that endure over time. Throughout my career, I have accumulated valuable experience in accounting and administrative processes, thanks to my involvement in various implementation projects.",
+    "rol": "Desarrollador front-end",
+    "short-description": "Me esforzo por hacer todo lo posible para que se refleje en el buen trabajo.",
+    "description": "He trabajado en soluciones integrales de base tecnológica para clínicas y hospitales integrando tanto el software de manejo como el equipo de trabajo de cada institución, logrando implementaciones tecnológicas que permanecen en el tiempo. A lo largo de mi carrera, he acumulado una valiosa experiencia en contabilidad y conocimientos de procesos administrativos, gracias a mi participación en diversos proyectos de implementación. Esta experiencia me ha permitido comprender la importancia de la gestión financiera y administrativa para el éxito de cualquier proyecto. Actualmente me desempeño como frontend principalmente con React y angular participando activamente en el ciclo de desarrollo de software.",
     "profile": "Perfil",
     "location": "Ubicacion",
     "skills": "Habilidades"
@@ -15,11 +15,15 @@
     "contact": "Contacto"
   },
   "short-profile": {
-    "description": "Actualmente, me desempeño como desarrollador front-end, con herramientas como React, Angular,NestJS participando de forma activa en el ciclo completo de desarrollo de software. Disfruto del desafío que implica el desarrollo web y estoy constantemente buscando oportunidades para aprender y colaborar en equipo.",
+    "description": "Actualmente, me desempeño como desarrollador front-end y back-end",
     "skills": "HTML, CSS, React, Angular, GraphQL, Contenfull",
     "location": "Marinilla-Antioquia-Colombia"
   },
   "summary": {
+    "title":"Mi preparación y experiencia",
+    "first-education":"asassdfsfsdf",
+    "second-education":"zxczxczczczxc",
+    "last-education":"sfsafhsajfkhsajkfgh",
     "first-job-title": "Freelance Soporte e Implementación",
     "first-job-dates": "2005-2011",
     "first-job-position": "Freelance",

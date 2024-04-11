@@ -15,11 +15,15 @@
     "contact": "Contact"
   },
   "short-profile": {
-    "description": "Currently, I work as a front-end developer, utilizing tools like React, Angular, and NestJS, actively participating in the entire software development cycle. I enjoy the challenges of web development and am constantly seeking opportunities to learn and collaborate as part of a team.",
+    "description": "Currently, I work as a front-end developer and back-end.",
     "skills": "HTML, CSS, React, Angular, GraphQL, Contenfull",
     "location": "Marinilla, Antioquia, Colombia"
   },
   "summary": {
+    "title":"My Preparation and Experience",
+    "first-education":"asassdfsfsdf",
+    "second-education":"zxczxczczczxc",
+    "last-education":"sfsafhsajfkhsajkfgh",
     "first-job-title": "Freelance Support and Implementation",
     "first-job-dates": "2005-2011",
     "first-job-position": "Freelance",

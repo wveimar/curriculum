@@ -27,7 +27,9 @@ html {
 }
 .titulo-seccion {
   font-family: "Yellowtail";
-  font-size: x-large;
+  font-size: xx-large;
+  letter-spacing:2px;
+
 }
 
 
@@ -61,12 +63,12 @@ html {
   background-color: rgb(228, 228, 228);
 }
 /* Lista de idiomas */
-.idiomas{
+.idiomas {
   position: absolute;
   top: 35px;
   display: flex;
   flex-direction: column;
-  visibility: hidden;
+  /* visibility: hidden; */ /* Comentamos o eliminamos esta línea */
 }
 .idiomas li{
   width: 100%;
@@ -204,14 +206,14 @@ html {
 }
 
 .inicio .contenido-seccion .info h1 {
-  font-size: 3rem;
+  font-size: xxx-large;
   letter-spacing: 5px;
 }
 
 .inicio .contenido-seccion .info h2 {
   font-weight: normal;
-  font-size: 20px;
-  margin-top: -10px;
+  font-size: x-large;
+  margin-top: 10px;
   letter-spacing: 2px;
 }
 
@@ -272,7 +274,8 @@ html {
 .sobremi .contenido-seccion .especial {
   color: var(--primary-color);
   font-weight: bold;
-  margin-top: 15px;
+  font-size:large;
+ padding: 15px 0 10px 0;
 }
 .sobremi .contenido-seccion p {
   max-width: 700px;
@@ -320,21 +323,39 @@ html {
     margin: auto;
     padding: 0 10px;
   }
+
   .habilidades .contenido-seccion h3{
     text-transform: capitalize;
     font-size: xx-large;
   }
 
   .habilidades .contenido-seccion .fila {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    display: flex; /* Establece flexbox para acomodar elementos en fila */
+  flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea si no caben en la actual */
+  justify-content: space-between; /* Distribuye los elementos con espacio uniforme entre ellos */
+  margin: 0 auto; /* Centra la fila horizontalmente */
+  width: 80%; /
   }
 
 .habilidades .contenido-seccion .fila .col {
-    width: 47%;
-    text-align: left;
+  flex: 1 0 auto; /* Define la base del ancho de cada columna */
+  padding: 10px; /* Agrega espacio interior a las columnas */
+  text-align: center; 
 }
+
+@media (max-width: 768px) {
+  .habilidades .contenido-seccion .fila  {
+    width: 100%; /* En pantallas pequeñas, la fila ocupa todo el ancho */
+  }
+
+  .habilidades .contenido-seccion .fila .col {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0 1em 0 1em /* En pantallas pequeñas, cada columna ocupa el ancho completo */
+  }
+}
+
 .habilidades .contenido-seccion .fila .col .cont-barra {
     display: flex;
     align-items: center;
@@ -372,11 +393,23 @@ margin-right: 10px;
 .resumen .contenido-seccion .info{
     text-align: left;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
 }
 .resumen .contenido-seccion .info .col{
     width: 45%;
+    flex: 0 0 45%;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+  .resumen .contenido-seccion .info {
+    flex-direction: column;
+  }
+
+  .resumen .contenido-seccion .info .col {
+    width: 100%; 
+  }
 }
 .resumen .contenido-seccion .info .col .titulo{
     display: inline-block;
@@ -431,11 +464,13 @@ margin-right: 10px;
   font-size: xx-large;
 }
 .contacto .contenido-seccion .fila {
-  display: flex;
-  justify-content: space-around;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Adjust gap for spacing between columns */
 }
 .contacto .contenido-seccion .fila .col {
-  margin-top:50px ;
+  margin-top:0px ;
 }
 .contacto .contenido-seccion .fila .col h2 {
   color: var(--main-bg-color);
