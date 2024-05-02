@@ -19,6 +19,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Configuración global del documento */
@@ -34,37 +35,30 @@ html {
 
 
 /* idiomas*/
-.ul__nav{
-  padding-left: 0;
-  list-style: none;
-}
-.a__nav{
-  text-decoration: none;
+
+
+.translate{
+  display: flex;
+  margin: auto;
 }
 .img__nav{
   width: 15px;
   height: 15px;
-}
-.translate{
-  display: flex;
-  justify-content: end;
-  width: 95%;
-  margin: auto;
 }
 .idioma{
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 10px;
-  border: 1px solid rgb(219, 219, 219);
-  position: relative;
+opacity: 0;
+
 }
 .idioma:hover{
   background-color: rgb(228, 228, 228);
 }
 /* Lista de idiomas */
 .idiomas {
-  position: absolute;
+ 
   top: 35px;
   display: flex;
   flex-direction: column;
@@ -72,12 +66,14 @@ html {
 }
 .idiomas li{
   width: 100%;
+  list-style-type: none;
 }
 .idiomas li a{
   display: block;
   padding: 10px;
   font-size: 10px;
   color: rgb(85, 85, 85);
+  opacity: 0.8;
 }
 .idiomas li a:hover{
   background-color: rgb(219, 219, 219);
@@ -88,6 +84,7 @@ html {
 /* toogle - js */
 .toggle{
   visibility: visible;
+
 }
 /* Main */
 .info__main{
@@ -126,31 +123,38 @@ html {
 .inicio .contenido-seccion header {
   padding: 30px;
 }
-
+/*Menu lateral contenedor*/
+.inicio .contenido-seccion header .menu-lateral {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1em;
+  max-width: calc(100% - 20px);
+}
+@media (min-width: 1000px) {
+  .inicio .contenido-seccion header .menu-lateral {
+    top: calc(1em + 4vw); /* Cambiar la posición superior */
+    right: calc(1em + 12vw); /* Cambiar la posición derecha */
+  }
+}
 
 /* Menú lateral */
 .inicio .contenido-seccion header nav {
-  position: fixed;
   margin-left: 0px;
   background-color: var(--main-bg-color);
   padding: 15px;
   border-radius: 10px;
   text-align: left;
-  z-index: 99;
+  box-shadow: 1px 3px 5px 0px var(--Shadow-color-light);
   display:none;
-  right: 1px; /* Ajusta la distancia desde el borde derecho según tus necesidades */
-  left: auto;
+ 
 }
+
 
 .inicio .contenido-seccion header input[type="checkbox"] {
   display: none;
-
-}
-
-.inicio .contenido-seccion header label.nav-bar {
-  /* Alinea a la izquierda */
-  margin-left: 300px; /* Puedes ajustar la distancia según tus necesidades */
-  margin-right: 0px;   /* Asegura que no haya margen a la derecha */
 }
 
 .inicio .contenido-seccion header nav a {
@@ -159,6 +163,26 @@ html {
   text-decoration: none;
   margin-bottom: 10px;
   font-weight: bold;
+}
+/* Barra de navegación */
+.inicio .contenido-seccion header .nav-bar {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  font-size: 20px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  padding: 1rem;
+}
+
+
+.inicio .contenido-seccion header .nav-bar:hover {
+  box-shadow: 0 0 35px var(--Shadow-color-light);
+}
+
+/* Mostrar/ocultar el menú cuando el checkbox está marcado */
+#menu:checked ~ #nav {  /* Se cambia el selector */
+  display: block;
 }
 
 /* Estilos del logo */
@@ -173,28 +197,7 @@ html {
   color: var(--primary-color);
   font-family: "Yellowtail";
 }
-/* Barra de navegación */
-.inicio .contenido-seccion header .nav-bar {
-  position: fixed;
-  background-color: var(--main-bg-color);
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 50px;
-  cursor: pointer;
-  transition: 3s;
-}
 
-
-.inicio .contenido-seccion header .nav-bar:hover {
-  box-shadow: 0 0 35px var(--Shadow-color-light);
-}
-
-/* Mostrar/ocultar el menú cuando el checkbox está marcado */
-#menu:checked ~ #nav {  /* Se cambia el selector */
-  display: block;
-}
 
 
 
