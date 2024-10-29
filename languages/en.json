@@ -16,7 +16,7 @@
   },
   "short-profile": {
     "description": "Currently, I work as a front-end developer and back-end.",
-    "skills": "HTML, CSS, React, Angular, GraphQL, Contenfull",
+    "skills": "HTML, CSS, React, Angular, GraphQL, Contenfull,SQL",
     "location": "Marinilla, Antioquia, Colombia"
   },
   "summary": {
@@ -24,6 +24,7 @@
     "first-education":"asassdfsfsdf",
     "second-education":"zxczxczczczxc",
     "last-education":"sfsafhsajfkhsajkfgh",
+    "last-education-date":"2005-2011",
     "first-job-title": "Freelance Support and Implementation",
     "first-job-dates": "2005-2011",
     "first-job-position": "Freelance",
