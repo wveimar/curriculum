@@ -20,11 +20,11 @@
     "location": "Marinilla, Antioquia, Colombia"
   },
   "summary": {
-    "title":"My Preparation and Experience",
-    "first-education":"asassdfsfsdf",
-    "second-education":"zxczxczczczxc",
-    "last-education":"sfsafhsajfkhsajkfgh",
-    "last-education-date":"2005-2011",
+    "title": "My Preparation and Experience",
+    "last-education-date": "2020-2024",
+    "last-education": "Full Stack Developer",
+    "second-education": "Business Administration",
+    "first-education": "Systems Engineering",
     "first-job-title": "Freelance Support and Implementation",
     "first-job-dates": "2005-2011",
     "first-job-position": "Freelance",
@@ -51,7 +51,14 @@
     "phone": "Phone",
     "email":"Email",
     "website": "Website"
+  },
+  "skills": {
+    "title": "I specialize in",
+    "html": "HTML/CSS",
+    "javascript": "JAVASCRIPT",
+    "react": "React",
+    "angular": "Angular JS",
+    "nestjs": "Nest JS",
+    "nextjs": "Next JS"
   }
-  
-
 }

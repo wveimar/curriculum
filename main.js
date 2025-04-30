@@ -1,64 +1,67 @@
-const idiomaActual = document.getElementById('idioma');
-const listaIdiomas = document.getElementById('idiomas');
-const idiomas = document.getElementsByClassName('opcion');
+// Constantes y configuraciones
+const CONFIG = {
+  defaultLanguage: 'es',
+  supportedLanguages: {
+    'en-US': 'usa',
+    'es': 'latino'
+  }
+};
 
+// Elementos del DOM
+const elements = {
+  currentLanguage: document.getElementById('idioma'),
+  languageList: document.getElementById('idiomas'),
+  languageOptions: document.getElementsByClassName('opcion'),
+  textsToChange: document.querySelectorAll('[data-section]')
+};
 
+// Funciones de utilidad
+const fetchLanguageFile = async (language) => {
+  try {
+    const response = await fetch(`./languages/${language}.json`);
+    return await response.json();
+  } catch (error) {
+    console.error('Error loading language file:', error);
+    return null;
+  }
+};
 
+const updateTexts = (texts) => {
+  elements.textsToChange.forEach(textToChange => {
+    const section = textToChange.dataset.section;
+    const value = textToChange.dataset.value;
+    textToChange.textContent = texts[section][value];
+  });
+};
 
-// Toggle lista idiomas
-idiomaActual.addEventListener('click',()=>{
-    listaIdiomas.classList.toggle('toggle');
+// Event Listeners
+elements.currentLanguage.addEventListener('click', () => {
+  elements.languageList.classList.toggle('toggle');
 });
 
-const opcionesArray = Array.from(idiomas);
-const textsToChange = document.querySelectorAll('[data-section]');
+Array.from(elements.languageOptions).forEach(option => {
+  option.addEventListener('click', () => {
+    const language = option.getElementsByTagName('span')[0].textContent.toLowerCase();
+    setLanguage(language);
+  });
+});
 
-
-opcionesArray.forEach((opcion)=>{
-    opcion.addEventListener('click',()=>{
-        const idioma = opcion.getElementsByTagName('span')[0].textContent.toLowerCase();
-        establecerIdioma(idioma);
-    });
-})
-
-function establecerIdioma(idioma) {
-    idiomaActual.getElementsByTagName('img')[0].src = `banderas/${idioma}.svg`;
-    switch (idioma) {
-        
-        case 'usa':
-                changeLanguage('en');
-                console.log('en');
-            break;
-        case 'latino':
-            changeLanguage('es');
-            console.log('es');
-            break;
-        default:
-            break;
-    }
-}
-
-const changeLanguage = async language => {
-    const requestJson = await fetch(`./languages/${language}.json`);
-    const texts = await requestJson.json();
+// Funciones principales
+const setLanguage = async (language) => {
+  const flagPath = `banderas/${language}.svg`;
+  elements.currentLanguage.getElementsByTagName('img')[0].src = flagPath;
   
-    for (const textToChange of textsToChange) {
-      const section = textToChange.dataset.section;
-      const value = textToChange.dataset.value;
-      textToChange.textContent = texts[section][value];
-    }
-  };
+  const languageCode = language === 'usa' ? 'en' : 'es';
+  const texts = await fetchLanguageFile(languageCode);
+  
+  if (texts) {
+    updateTexts(texts);
+  }
+};
 
-
-
-document.addEventListener('DOMContentLoaded',()=>{
-    switch (navigator.language) {
-        case 'en-US':
-            establecerIdioma('usa')
-            break;
-        
-        default:
-            establecerIdioma('latino')
-            break;
-    }
+// Inicialización
+document.addEventListener('DOMContentLoaded', () => {
+  const userLanguage = navigator.language;
+  const defaultLanguage = CONFIG.supportedLanguages[userLanguage] || CONFIG.defaultLanguage;
+  setLanguage(defaultLanguage);
 });

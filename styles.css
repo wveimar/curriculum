@@ -3,16 +3,24 @@
 
 /* Variables de colores */
 :root {
-  --background-gradient: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  );
-  --background-alternate: #e6e6e6;
-  --main-bg-color: #940253;
+  /* Colores principales */
+  --primary-color: #940253;
   --text-color: #fff;
   --text-color-alternate: #666;
-  --primary-color: #940253;
-  --Shadow-color-light: #fff;
+  --background-alternate: #e6e6e6;
+  
+  /* Gradientes y efectos */
+  --background-gradient: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  --shadow-color-light: #fff;
+  
+  /* Espaciado */
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 30px;
+  
+  /* Breakpoints */
+  --breakpoint-mobile: 768px;
+  --breakpoint-desktop: 1000px;
 }
 
 /* Resetear estilos */
@@ -143,11 +151,11 @@ opacity: 0;
 /* Menú lateral */
 .inicio .contenido-seccion header nav {
   margin-left: 0px;
-  background-color: var(--main-bg-color);
+  background-color: var(--primary-color);
   padding: 15px;
   border-radius: 10px;
   text-align: left;
-  box-shadow: 1px 3px 5px 0px var(--Shadow-color-light);
+  box-shadow: 1px 3px 5px 0px var(--shadow-color-light);
   display:none;
  
 }
@@ -167,7 +175,7 @@ opacity: 0;
 /* Barra de navegación */
 .inicio .contenido-seccion header .nav-bar {
   height: 50px;
-  background-color: var(--main-bg-color);
+  background-color: var(--primary-color);
   font-size: 20px;
   border-radius: 50%;
 
@@ -177,7 +185,7 @@ opacity: 0;
 
 
 .inicio .contenido-seccion header .nav-bar:hover {
-  box-shadow: 0 0 35px var(--Shadow-color-light);
+  box-shadow: 0 0 35px var(--shadow-color-light);
 }
 
 /* Mostrar/ocultar el menú cuando el checkbox está marcado */
@@ -190,7 +198,7 @@ opacity: 0;
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "Yellowtail";
-  text-shadow: 0 0 35px var(--Shadow-color-light);
+  text-shadow: 0 0 35px var(--shadow-color-light);
 }
 
 .inicio .contenido-seccion header .logo .color {
@@ -240,7 +248,7 @@ opacity: 0;
 .inicio .contenido-seccion .info .redes a:hover {
   color: var(--text-color);
   background-color: var(--primary-color);
-  box-shadow: 0 0 20px var(--Shadow-color-light);
+  box-shadow: 0 0 20px var(--shadow-color-light);
 }
 
 /* Sección de la foto */
@@ -346,11 +354,11 @@ opacity: 0;
   text-align: center; 
 }
 
-@media (max-width: 768px) {
-  .habilidades .contenido-seccion .fila  {
-    width: 100%; /* En pantallas pequeñas, la fila ocupa todo el ancho */
+@media (max-width: var(--breakpoint-mobile)) {
+  .habilidades .contenido-seccion .fila {
+    width: 100%;
   }
-
+  
   .habilidades .contenido-seccion .fila .col {
     display: flex;
     flex-direction: column;
@@ -365,7 +373,7 @@ opacity: 0;
 }
 .habilidades .contenido-seccion .barra {
 display: flex;
-border: 1px solid var(--main-bg-color);
+border: 1px solid var(--primary-color);
 padding: 2px;
 border-radius: 3px;
 margin-right: 10px;
@@ -405,7 +413,7 @@ margin-right: 10px;
     flex: 0 0 45%;
     padding: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-mobile)) {
   .resumen .contenido-seccion .info {
     flex-direction: column;
   }
@@ -476,5 +484,5 @@ margin-right: 10px;
   margin-top:0px ;
 }
 .contacto .contenido-seccion .fila .col h2 {
-  color: var(--main-bg-color);
+  color: var(--primary-color);
 }
