@@ -1,64 +1,68 @@
 {
   "about": {
-    "rol": "Desarrollador front-end",
-    "short-description": "Me esforzo por hacer todo lo posible para que se refleje en el buen trabajo.",
-    "description": "He trabajado en soluciones integrales de base tecnológica para clínicas y hospitales integrando tanto el software de manejo como el equipo de trabajo de cada institución, logrando implementaciones tecnológicas que permanecen en el tiempo. A lo largo de mi carrera, he acumulado una valiosa experiencia en contabilidad y conocimientos de procesos administrativos, gracias a mi participación en diversos proyectos de implementación. Esta experiencia me ha permitido comprender la importancia de la gestión financiera y administrativa para el éxito de cualquier proyecto. Actualmente me desempeño como frontend principalmente con React y angular participando activamente en el ciclo de desarrollo de software.",
+    "rol": "Desarrollador Frontend & Diseñador UI",
+    "short-description": "Especializado en crear interfaces web de alto impacto, accesibles y orientadas a resultados que conectan a las personas con la tecnología.",
+    "description": "Desarrollador Frontend con sólida experiencia en la creación de aplicaciones web escalables y optimizadas utilizando React, Angular, JavaScript y CSS moderno. Cuento con una base en Ingeniería de Sistemas y amplia trayectoria en la implementación de soluciones tecnológicas empresariales (ERPs e integraciones en sectores salud y comercial). Mi enfoque combina el diseño centrado en el usuario (UX/UI) con buenas prácticas de desarrollo para entregar productos limpios, accesibles y de alto rendimiento que aportan valor real al negocio.",
     "profile": "Perfil",
-    "location": "Ubicacion",
+    "location": "Ubicación",
     "skills": "Habilidades"
   },
   "sections": {
     "home": "Inicio",
     "about": "Sobre mí",
-    "skills": "Habilidades",
-    "summary": "Resumen",
+    "portfolio": "Proyectos",
+    "summary": "Trayectoria",
     "contact": "Contacto"
   },
   "short-profile": {
-    "description": "Actualmente, me desempeño como desarrollador front-end y back-end",
-    "skills": "HTML, CSS, React, Angular, GraphQL, Contenfull",
-    "location": "Marinilla-Antioquia-Colombia"
+    "description": "Desarrollador Frontend enfocado en crear experiencias interactivas y escalables.",
+    "location": "Marinilla, Antioquia, Colombia"
   },
   "summary": {
     "title": "Mi preparación y experiencia",
-    "last-education-date": "2020-2025",
+    "last-education-date": "2020 - 2025",
     "last-education": "Desarrollador Full Stack",
     "second-education": "Administración de Empresas",
     "first-education": "Ingeniería de Sistemas",
     "first-job-title": "Freelance Soporte e Implementación",
-    "first-job-dates": "2005-2011",
-    "first-job-position": "Freelance",
-    "first-job-description": "Implementación de software CNT en diferentes hospitales de Colombia con énfasis en administrativo y asistencial.",
+    "first-job-dates": "2005 - 2011",
+    "first-job-position": "Especialista en Implementación",
+    "first-job-description": "Lideré la implementación y despliegue del software CNT en diferentes hospitales de Colombia, capacitando a personal médico y administrativo en módulos asistenciales.",
     "second-job-title": "CNT Sistemas de Información",
-    "second-job-dates": "2009-2011",
-    "second-job-position": "Implementación y Soporte",
-    "second-job-description": "Brindé soporte técnico especialmente en las áreas administrativas.",
+    "second-job-dates": "2009 - 2011",
+    "second-job-position": "Ingeniero de Soporte y Despliegue",
+    "second-job-description": "Brindé soporte técnico de nivel 2 y 3 en áreas administrativas y financieras, optimizando los flujos de facturación e integración hospitalaria.",
     "third-job-title": "MEDICANCER",
-    "third-job-dates": "2010-2014",
-    "third-job-position": "Administrador",
-    "third-job-description": "Administré el sistema ERP de CNT. También lideré un equipo interdisciplinario y fui responsable de la capacitación del personal.",
+    "third-job-dates": "2010 - 2014",
+    "third-job-position": "Administrador de ERP",
+    "third-job-description": "Administré la plataforma ERP institucional de CNT. Lideré un equipo interdisciplinario de soporte y fui el responsable de la planeación y capacitación técnica del personal.",
     "fourth-job-title": "Kuub México",
     "fourth-job-dates": "2021",
-    "fourth-job-position": "Frontend Developer",
-    "fourth-job-description": "Desarrollo componentes web utilizando React, Next.js y Material UI.",
+    "fourth-job-position": "Frontend Developer (React)",
+    "fourth-job-description": "Desarrollé componentes web reutilizables de UI interactiva utilizando React, Next.js y Material UI. Colaboré en equipos ágiles bajo metodología Scrum, mejorando la velocidad de carga de las páginas web y asegurando la consistencia visual.",
     "last-job-title": "Corporación Una Vida Tranquila",
-    "last-job-dates": "2022-2025",
-    "last-job-position": "Frontend Developer",
-    "last-job-description": "Desarrollamos un ERP utilizando Angular y NestJS. También trabajamos en la implementación de nuevas funcionalidades y la corrección de errores."
+    "last-job-dates": "2022 - 2025",
+    "last-job-position": "Frontend Developer (Angular/NestJS)",
+    "last-job-description": "Diseñé e implementé el panel administrativo y módulos del ERP usando Angular y NestJS. Adicionalmente, lideré el desarrollo de automatizaciones de procesos (RPA) con Automation 360 para el Banco de la Mujer, optimizando procesos financieros y operativos del negocio."
+  },
+  "portfolio": {
+    "title": "Portafolio de Proyectos",
+    "subtitle": "Una selección de trabajos reales que demuestran mi capacidad para resolver necesidades de negocio con código limpio y UI de alta calidad.",
+    "proj1-title": "Catálogo Cultural del Oriente",
+    "proj1-desc": "Plataforma digital para preservar y promover el talento musical del Oriente Antioqueño. Desarrollé una interfaz responsiva y accesible que conecta gestores y artistas con su público.",
+    "proj2-title": "Landing de Servicios Musicales",
+    "proj2-desc": "Sitio comercial de alta conversión diseñado para la reserva de servicios de mariachis. Optimizado para SEO local y rendimiento móvil, impulsando el contacto directo del cliente.",
+    "proj3-title": "Mendoza Arte en Hilo",
+    "proj3-desc": "E-commerce y catálogo digital interactivo para venta de artesanías finas. Desarrollé una interfaz fluida con animaciones que resaltan la calidad del producto y simplifican el proceso de compra.",
+    "proj4-title": "Gestión de Servicios Técnicos",
+    "proj4-desc": "Aplicación web interactiva para cotizar mantenimientos de bicicletas y agendar citas de taller. Diseñado con arquitectura modular que garantiza velocidad y fácil mantenimiento.",
+    "btn-live": "Ver Demo",
+    "btn-code": "Ver Código"
   },
   "contact": {
-    "title": "Ponte en contacto ahora mismo!",
-    "phone": "Telefono",
-    "email":"Correo",
-    "website": "SitioWeb"
-  },
-  "skills": {
-    "title": "Me especializo en",
-    "html": "HTML/CSS",
-    "javascript": "JAVASCRIPT",
-    "react": "React",
-    "angular": "Angular JS",
-    "nestjs": "Nest JS",
-    "nextjs": "Next JS"
+    "title": "¡Ponte en contacto ahora mismo!",
+    "phone": "Teléfono",
+    "email": "Correo",
+    "website": "Sitio Web"
   }
 }
